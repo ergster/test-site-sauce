@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&display=swap ');
+
+#wrapper{
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	background-color:#f0f0f5;
+	word-wrap:break-word;
+	min-width:412px;
+	max-width:2048px;
+	-webkit-box-shadow: 5px 4px 10px -2px #000000; 
+	box-shadow: 5px 4px 10px -2px #000000;
+}
+
+body {
+	font-family: "Courier Prime", monospace;
+	background-color:#666699;
+	color:#003300; 
+	margin:0;
+}
+
+h1,h2,h3 {
+	font-family: "Oswald", sans-serif;
+}
+
+header,nav,footer{
+	text-align:center;
+}
+
+main{
+	max-width:1000px;
+	margin: 20px auto;
+	padding: 10px;
+}
+footer{
+	border-top: brown 1px solid;
+	text-align: center;
+}
+nav{
+	text-align:center;
+	background-color: white;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+}
+
+nav ul{
+	list-style-type: none; 
+	padding:0;
+	margin: 8px 0;
+}
+
+nav li{
+	display:inline;
+	padding: 10px;
+	font-weight:bold;
+}
+
+nav li{
+	display:inline;
+	padding: 10px;
+}
+
+.home-hero{
+	background-image: url(images/hero-image.png);
+	height:300px;
+	width:auto;
+	background-size:contain;
+	background-position:top center;
+	background-repeat:no-repeat;
+}
+
+.fa{
+	color:black;
+	font-size:4em;
+}
+
+.center{
+	text-align:center;
+}
+
+.col-sm-4 p, .col-sm-3 p, .col-sm-9 p, .col-sm-8 p, .col-sm-6 p, .col-sm-12 p{
+	background-color:#00004d;
+	height:50px;
+	width: 100%;
+	margin: 5px;
+	padding: 12px; 
+	color:white;
+	text-align: center;
+}
+
+.phone-only{
+	display:none;
+}
+a:link{
+	color: #003300;
+}
+a:visited{
+	color: #003300;
+}
+a:hover{
+	color: black;
+}
+a:active{
+	color: #f0f0f5;
+}
+
+.col-sm-6 p:hover{
+	background-color: #660000;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+nav a:link{
+	color:black;
+}
+
+nav a:visited{
+	color:black;
+}
+
+nav a:hover{
+	color:blue;
+}
+
+nav a:active{
+	color:white;
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+	font-size: 4em;
+ }
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 1.8em;
+	}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 1.5em;
+	}
+	.col-sm-6 p, .col-sm-12 p{
+		padding:6px;
+	}
+	.phone-only{
+		display:block;
+	}
+}
